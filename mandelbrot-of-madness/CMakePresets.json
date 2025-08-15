@@ -1,0 +1,52 @@
+{
+    "version": 8,
+    "configurePresets": [
+        {
+            "name": "default",
+            "generator": "Ninja",
+            "binaryDir": "${sourceDir}/build/",
+            "cacheVariables": {
+                "CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake",
+                "CMAKE_BUILD_TYPE": "Release"
+            }
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "default",
+            "configurePreset": "default",
+            "cleanFirst": true,
+            "targets": "all"
+        },
+        {
+            "name": "singlethreaded",
+            "configurePreset": "default",
+            "cleanFirst": true,
+            "targets": "singlethreaded"
+        },
+        {
+            "name": "multithreaded",
+            "configurePreset": "default",
+            "cleanFirst": true,
+            "targets": "multithreaded"
+        },
+        {
+            "name": "gpu-accel",
+            "configurePreset": "default",
+            "cleanFirst": true,
+            "targets": "gpu-accel"
+        },
+        {
+            "name": "benchmarker",
+            "configurePreset": "default",
+            "cleanFirst": true,
+            "targets": ["benchmarker", "singlethreaded", "multithreaded", "gpu-accel"]
+        },
+        {
+            "name": "gui",
+            "configurePreset": "default",
+            "cleanFirst": true,
+            "targets": "gui"
+        }
+    ]
+}
