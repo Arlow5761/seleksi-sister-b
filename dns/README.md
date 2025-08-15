@@ -9,8 +9,12 @@ vboxmanage dhcpserver add --server-ip=135.23.161.254 --lower-ip=135.23.161.1 --u
 ```
 
 run client/main on dns-client with sudo for dhcp alterations
+
 run proxy/main on dns-proxy
+
 have dns-nameserver and dns-server on standby
 
+## Links
 Virtual Machines : https://drive.google.com/file/d/1WOqB7AG_XzRNfsoQTIw-fJa-xDm-hBlB/view?usp=drive_link
+
 Preview : https://drive.google.com/file/d/1R8OUp47u7dLGX47Jr3Aq6O-2BKtEr3U3/view?usp=drive_link
