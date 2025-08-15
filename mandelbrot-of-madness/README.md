@@ -19,3 +19,14 @@ Run the executable in the bin directory after building
 
 ## Showcase
 https://drive.google.com/file/d/1Wr7qYkIAyKHUhfzwEIEfDN51_ktw5kcc/view?usp=drive_link
+
+## GUI Controls
+Plus : Increase Iterations
+
+Minus : Decrease Iterations
+
+Drag : Pan
+
+M : Switch between Mandelbrot and Julia
+
+L : Lock C value for Julia
